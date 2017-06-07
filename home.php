@@ -7,6 +7,17 @@
   ?>
 <!DOCTYPE html>
 <html lang="pt-BR">
+<script type="text/javascript">
+  function abreSubmenu()
+    {
+      window.document.getElementById('subMenu').innerHTML = '<ul class="nav navbar-nav navbar-right"><li><a href="#about">Sobre</a></li><li><a href="#services">Serviços</a></li><li><a href="#contact">Contatos</a></li></ul>';
+    }
+  function fechaSubmenu()
+    {
+      window.document.getElementById('subMenu').innerHTML = '';
+    }
+</script>
+
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -69,6 +80,10 @@
             </li>
             <li>
               <a href="#contact">Contatos</a>
+            </li>
+            <li>
+              <a href="#teste" onMouseOver="abreSubmenu()" onClick="fechaSubmenu()">Submenu</a>
+                <div id="subMenu" ></div>
             </li>
           </ul>
         </div>

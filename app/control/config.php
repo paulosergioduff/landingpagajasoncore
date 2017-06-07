@@ -4,10 +4,10 @@
 //require_once('model/token.php'); // Evita acesso indesejado externo
 $caminho = 'http://localhost/novoMVC/areaDeTrabalho/';
 define('SERVIDOR', 'localhost');
-define('NOMEDB', 'triangular');
+define('NOMEDB', 'triPro');
 define('CHARSET', 'utf8');
 define('USUARIO', 'root');
-define('SENHA', 'root');
+define('SENHA', '');
 class Conexao
 {
         /*   
