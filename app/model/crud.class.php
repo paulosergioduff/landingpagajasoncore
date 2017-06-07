@@ -74,7 +74,7 @@ class crud
                                                                 $stm->bindValue(5, $valor2);
                                                                 $stm->bindValue(6, $id);
                                                                 $stm->execute();
-                                                                //retornoUpdate();
+                                                                retornoUpdate();
                                                 }
                                                 catch (PDOException $erro) {
                                                                 echo "<script>alert('Erro na linha: {$erro->getLine()}')</script>";
